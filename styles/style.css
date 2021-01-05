@@ -1,0 +1,243 @@
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    padding-top: 1.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.main {
+    width: 60%;
+    margin: 2rem auto 0 auto;
+}
+
+.body-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.title {
+    font-family: 'Reenie Beanie', cursive;
+    color: black;
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    transition: color 1s;
+}
+
+.title:hover {
+    font-size: 6rem;
+    transition: color 1s;
+    font-weight: normal;
+}
+
+.title:hover {
+    text-decoration: none;
+}
+
+.facebook {
+    text-align: center;
+}
+
+.facebook:hover {
+    text-decoration: none;
+}
+
+.facebook img {
+    height: 20px;
+    width: 20px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    font-family: 'Reenie Beanie', cursive;
+    color: #919191;
+    font-size: 2rem;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s;
+
+}
+
+#mobileNav a {
+    font-family: 'Reenie Beanie', cursive;
+    color: #919191;
+    font-size: 2rem;
+}
+
+.burger-menu {
+    text-align: right;
+}
+
+.burger-menu img {
+    height: 30px;
+    width: 30px;
+    color: #919191;
+    margin-top: 8px;
+}
+
+.row.mobileNav {
+    display: none;
+}
+
+.contact {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    padding: 5rem;
+    margin-top: 2rem;
+}
+
+.contact textarea {
+    max-width: 100%;
+    min-height: 150px;
+    line-height: 1.5em;
+    resize: none;
+    font-weight: normal;
+}
+
+.contact .sub-title {
+    font-family: OpenSans;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.contact input,
+.contact textarea {
+    width: 60%;
+    font-size: 100%;
+    padding: 1.2em 1em 1em 1.8em;
+    font-family: OpenSans;
+    font-weight: bold;
+    border: 1px solid #919191;
+    letter-spacing: .075em;
+    padding: 1.3em 1em 1em 1.2em;
+    color: #919191;
+    outline: 0px none;
+    margin: 0 auto;
+    display: block !important;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.contact .submit {
+    width: 30%;
+    height: 4rem;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .7em;
+    letter-spacing: .1em;
+    border: 1px solid #3c3c3c;
+    background-color: #3c3c3c;
+    padding: .85em 1em .75em 1.5em;
+    position: relative;
+    outline: 0 none;
+    transition: all .5s ease 0s;
+    font-family: OpenSans;
+    margin-top: 1.25em;
+}
+
+.contact .submit:hover {
+    background-color: #919191;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: all 280ms ease-out;
+    color: black;
+    align-items: center;
+    height: 50px;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+
+#mobileNav a {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.slika {
+    margin-bottom: 2rem;
+}
+
+/* Mobile stuff */
+@media (max-width: 575px) {
+    header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        transition: all 280ms ease-out;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    .row.mobileNav.show {
+        display: flex;
+        width: 100%;
+    }
+
+    .title {
+        text-align: left;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .title:hover {
+        font-size: 2rem;
+        color: black;
+    }
+
+    #mobileNav a {
+        transition: color 0.5s;
+    }
+
+    #mobileNav a:hover {
+        text-decoration: none;
+        color: black;
+        transition: color 0.5s;
+    }
+
+    .contact {
+        padding: 2rem;
+        margin-top: 0;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        resize: none;
+    }
+
+    .contact .submit {
+        width: 60%;
+    }
+}
