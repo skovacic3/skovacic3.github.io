@@ -22,9 +22,17 @@ header {
     position: relative;
 }
 
+.body-container h2 {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 4rem;
+}
+
 .gallery {
     width: 80%;
-    padding: 1rem 0;
+    padding: 2rem 0;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -244,6 +252,29 @@ footer p {
     margin: 0 auto;
 }
 
+.about {
+    background-color: #fafafa;
+    margin-top: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-content img {
+    width: 40%;
+}
+
+.about-content .text {
+    width: 50%;
+    margin: 0 auto;
+}
+
 /* Mobile stuff */
 @media (max-width: 682px) {
     header {
@@ -266,6 +297,8 @@ footer p {
     .main {
         width: 100%;
         background-color: #FAFAFA;
+        margin-top: 0;
+        padding: 2rem 0;
     }
 
     .row.mobileNav.show {
@@ -309,7 +342,7 @@ footer p {
 
     .contact {
         padding: 2rem 0;
-        margin-top: 2rem;
+        margin-top: 0;
     }
 
     .contact input,
@@ -340,4 +373,15 @@ footer p {
     .suradnja-content .desktop-image {
         display: none;
     }
+
+    .about-content img {
+        width: 100%;
+    }
+
+    .about-content .text {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+
 }
