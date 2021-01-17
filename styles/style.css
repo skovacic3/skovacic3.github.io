@@ -2,6 +2,7 @@ body {
     overflow-x: hidden;
     position: relative;
     margin: 0;
+    min-height: 100vh;
 }
 
 header {
@@ -115,8 +116,9 @@ nav a:hover {
     width: 100%;
     margin: 0 auto;
     background-color: #FAFAFA;
-    padding: 5rem;
+    padding: 2rem;
     margin-top: 2rem;
+    margin-right: 0;
 }
 
 .contact textarea {
@@ -180,8 +182,9 @@ nav a:hover {
 
 footer {
     display: flex;
-    position: relative;
+    position: absolute;
     bottom: 0;
+    top: 100%;
     width: 100%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
     transition: all 280ms ease-out;
@@ -206,8 +209,43 @@ footer p {
     width: 48%;
 }
 
+.colored {
+    background-color: #fafafa;
+}
+
+.suradnja-content {
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.suradnja-content .text {
+    font-family: OpenSans
+}
+
+.suradnja-content .text .sub-title {
+    width: 100%;
+}
+
+.suradnja-content img {
+    width: 35%;
+}
+
+.suradnja-content .mobile-image {
+    display: none;
+}
+
+.suradnja-content .text {
+    width: 60%;
+    margin: 0 auto;
+}
+
 /* Mobile stuff */
-@media (max-width: 575px) {
+@media (max-width: 682px) {
     header {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -218,6 +256,7 @@ footer p {
     .burger-menu {
         display: block;
         line-height: 3rem;
+        margin-left: auto;
     }
 
     nav {
@@ -240,7 +279,7 @@ footer p {
         font-size: 2rem;
         margin-bottom: 0.5rem;
         line-height: 3rem;
-        width: 90%;
+        width: 50%;
     }
 
     .title:hover {
@@ -269,13 +308,13 @@ footer p {
     }
 
     .contact {
-        padding: 2rem;
-        margin-top: 0;
+        padding: 2rem 0;
+        margin-top: 2rem;
     }
 
     .contact input,
     .contact textarea {
-        width: 100%;
+        width: 80%;
         margin-bottom: 1rem;
         margin-top: 1rem;
         resize: none;
@@ -283,5 +322,22 @@ footer p {
 
     .contact .submit {
         width: 60%;
+    }
+
+    .suradnja-content img {
+        width: 100%;
+    }
+
+    .suradnja-content .text {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .suradnja-content .mobile-image {
+        display: block;
+    }
+
+    .suradnja-content .desktop-image {
+        display: none;
     }
 }
