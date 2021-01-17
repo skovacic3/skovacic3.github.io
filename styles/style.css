@@ -1,21 +1,33 @@
 body {
-    min-height: 100%;
     overflow-x: hidden;
+    position: relative;
+    margin: 0;
 }
 
 header {
     padding-top: 1.5rem;
     margin-bottom: 0.1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main {
-    width: 60%;
+    width: 100%;
     margin: 2rem auto 0 auto;
+    background-color: #FAFAFA;
 }
 
 .body-container {
     position: relative;
-    min-height: 100vh;
+}
+
+.gallery {
+    width: 80%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .title {
@@ -25,6 +37,8 @@ header {
     font-size: 6rem;
     margin-bottom: 2rem;
     transition: color 1s;
+    width: 100%;
+    text-decoration: none;
 }
 
 .title:hover {
@@ -53,6 +67,10 @@ header {
 nav {
     text-align: center;
     margin-bottom: 2rem;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 nav a {
@@ -60,6 +78,7 @@ nav a {
     color: #919191;
     font-size: 2rem;
     transition: color 0.5s;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -78,6 +97,7 @@ nav a:hover {
 
 .burger-menu {
     text-align: right;
+    display: none;
 }
 
 .burger-menu img {
@@ -160,7 +180,7 @@ nav a:hover {
 
 footer {
     display: flex;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
@@ -183,6 +203,7 @@ footer p {
 
 .slika {
     margin-bottom: 2rem;
+    width: 48%;
 }
 
 /* Mobile stuff */
@@ -194,19 +215,32 @@ footer p {
         transition: all 280ms ease-out;
     }
 
+    .burger-menu {
+        display: block;
+        line-height: 3rem;
+    }
+
+    nav {
+        display: none;
+    }
+
     .main {
-        width: 80%;
+        width: 100%;
+        background-color: #FAFAFA;
     }
 
     .row.mobileNav.show {
         display: flex;
         width: 100%;
+        flex-wrap: wrap;
     }
 
     .title {
         text-align: left;
         font-size: 2rem;
         margin-bottom: 0.5rem;
+        line-height: 3rem;
+        width: 90%;
     }
 
     .title:hover {
@@ -216,12 +250,22 @@ footer p {
 
     #mobileNav a {
         transition: color 0.5s;
+        width: 100%;
+        text-decoration: none;
     }
 
     #mobileNav a:hover {
         text-decoration: none;
         color: black;
         transition: color 0.5s;
+    }
+
+    .gallery {
+        width: 90%;
+    }
+
+    .slika {
+        width: 100%;
     }
 
     .contact {

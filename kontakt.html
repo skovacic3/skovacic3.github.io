@@ -22,30 +22,25 @@
 </head>
 
 <body>
+    <header>
+        <a href="#" class="title">Tisja.art</a>
+        <nav class="col-sm-12 d-none d-sm-block">
+            <a href="#" class="col">Proizvodi</a>
+            <a href="#" class="col">Suradnje</a>
+            <a href="#" class="col">O meni</a>
+            <a href="kontakt.html" class="col">Kontakt</a>
+        </nav>
+
+        <a href="#" class="d-sm-none burger-menu" onclick="showMenu()"><img src="images/bars-solid.svg"></a>
+        <div id="mobileNav" class="row mobileNav">
+            <a class="col-12" href="#">Proizvodi</a>
+            <a class="col-12" href="#">Suradnje</a>
+            <a class="col-12" href="#">O meni</a>
+            <a class="col-12" href="kontakt.html">Kontakt</a>
+        </div>
+    </header>
+
     <div class="body-container">
-
-        <header class="row">
-            <a href="index.html" class="col-2 col-sm-12 title">Tisja.art</a>
-            <nav class="col-sm-12 d-none d-sm-block">
-                <a href="#" class="col">Proizvodi</a>
-                <a href="#" class="col">Suradnje</a>
-                <a href="#" class="col">O meni</a>
-                <a href="kontakt.html" class="col">Kontakt</a>
-            </nav>
-            <a class="col d-none d-sm-block facebook" href="https://www.facebook.com/tisja.art/"><img
-                    style="margin-right: 0.5rem;" src="images/facebook-brands.svg"></a>
-            <a href="#" class="col-2 offset-8 d-sm-none burger-menu" onclick="showMenu()"><img
-                    src="images/bars-solid.svg"></a>
-            <div id="mobileNav" class="row mobileNav">
-                <a class="col-12" href="#">Proizvodi</a>
-                <a class="col-12" href="#">Suradnje</a>
-                <a class="col-12" href="#">O meni</a>
-                <a class="col-12" href="#">Kontakt</a>
-                <a class="col-12 facebook" traget="_blank" href="https://www.facebook.com/tisja.art/"><img
-                        src="images/facebook-brands.svg"></a>
-            </div>
-        </header>
-
         <article class="contact">
             <h2 class="sub-title">Kontaktiraj me</h2>
             <div>
@@ -56,11 +51,11 @@
             <input type="submit" value="Pošalji" class="submit" />
 
         </article>
-
-        <footer>
-            <p>All rights reserved.</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>All rights reserved.</p>
+    </footer>
 
 </body>
 
